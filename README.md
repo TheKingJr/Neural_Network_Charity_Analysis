@@ -20,19 +20,24 @@ Data Preprocessing
 The variable considered the target is "IS_SUCCESSFUL" since Alphabet Soup wants to know which organizations that receive funding will be successful or not.
 
 - What variable(s) are considered to be the features for your model?
+
 The variables considered the features were: "APPLICATION_TYPE", "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION", "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS", "ASK AMT"
 
 - What variable(s) are neither targets nor features, and should be removed from the input data?
+
 The variables that are neither targets nor features are "EIN" & "NAME" and were removed accordingly from the input data.
 
 Compiling, Training, and Evaluating the Model
 - How many neurons, layers, and activation functions did you select for you neural network model, and why?
+
 I used a total 145 neurons across 3 hidden layers with a total of 3 different activation functions: "relu", "tanh", and "sigmoid." The number of neurons chosen was based of the rule of thumb of having 2-3 times the number of neurons as the number of inputs. As for the number of hidden layers, I thought spacing the neurons out across multiple hidden layers would improvde the predictive abilities of the neural network. Lastly, I chose the activation functions "relu", "tanh", and "sigmoid" because the point of the neural network model was to build a binary classifier and these were in my opinion the best options to go with. However, the use of "tanh" was simply an attempt to achieve a higher accuracy towards the end. 
 
 - Were you able to achieve the target model performance?
+
 I was not able to achieve the desired target model performance.
 
 - What steps did you take to try and increase model performance?
+
 I added more neurons to each of the existing hidden layers, added an additional hidden layer with a different type of activation function ("tanh"), and added more epochs in an attempt to increase the predictive accuary and reduce the losses of the neural network. 
 
 ## Summary
